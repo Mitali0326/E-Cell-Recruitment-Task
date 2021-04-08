@@ -1,0 +1,11 @@
+#myprojects {
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+}
+#myprojects .card{
+  width: 90%;
+  height: 100%;
+  
+}
+

@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Landing Page</title>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" rel="stylesheet"/>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.3.0/mdb.min.css"rel="stylesheet"/>
+<script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+<link rel="stylesheet" href="./nav.css">
+<link rel="stylesheet" href="./home.css">
+</head>
+<body >
+<!-- Side-Nav -->
+<button type="button" class="toggle-collapse d-block d-md-none" id="toggle-button">
+    <span class="toggle-icon"><i id="icon" class="fas fa-bars"></i></span>
+</button>
+<nav class="navbar m-0 p-0  d-block d-md-none" id="nav">
+      <div class="logo  mt-3">
+        <a href="#" class="logo"><span id="mit">Mit</span><span id="ali">ali</span> </a>
+      </div>
+      <ul class="side-nav m-0 p-0 d-block d-md-none">
+        <li class="nav-item">
+          <a href="./index.html" class="nav-link">Home</a>
+        </li>
+        <li class="nav-item">
+          <a href="./skills.html" class="nav-link">Skills</a>
+        </li>
+        <li class="nav-item">
+          <a href="./project.html" class="nav-link">Projects</a>
+        </li>
+        <li class="nav-item">
+          <a href="./contact.html" class="nav-link">Contact</a>
+        </li>
+        <li class="nav-item">
+            <a href="https://github.com/Mitali0326" class="nav-link"><i class="fab fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/mitali-gandhi-995a1b200/" class="nav-link"><i class="fab fa-linkedin"></i></a>
+            <a href="" class="nav-link"><i class="fab fa-instagram"></i></a>
+        </li>
+      </ul>
+</nav>
+<!-- NavBar-->
+<nav class="mynav d-md-block d-none sticky-top" id="navbar">
+ <ul class=" m-0 p-0 d-md-block d-none m">
+  <div id="logo1" class="navbar-brand"><span id="mit">Mit</span><span id="ali">ali</span></div>
+    <li class="nav-items ">
+      <a href="./index.html" class="nav-links ">Home</a>
+    </li>
+    <li class="nav-items">
+      <a href="./skills.html" class="nav-links">Skills</a>
+    </li>
+    <li class="nav-items">
+      <a href="./project.html" class="nav-links">Projects</a>
+    </li>
+    <li class="nav-items">
+      <a href="./contact.html" class="nav-links">Contact</a>
+    </li>
+  </ul>
+</nav>
+<!-- Landing Section -->
+<div class="p-5 bg-image shadow-2-strong" id="landing">
+  <div class="mask">
+    <div class="justify-content-center d-flex">
+      <div class="row" id="pic">
+        <div class="col-md-6 justify-content-center d-flex">
+          <div  id="namesec" class="justify-content-center d-flex">
+            <div style="margin-top: 10% !important;">
+              <h1 class="mb-4 overflow" id="name"  >Mitali Gandhi </h1>
+              <div class="justify-content-center d-flex" style="margin-left: -50px;">  
+                <h4 class="mb-3 text-white" style="font-size: 1.5rem;">I'm a WebDeveloper</h4>
+                <lottie-player src="./smile.json" background="transparent"  speed=".5" style="height: 5em; width: 5em; display: inline;  margin-top: -30px !important; overflow-y: hidden !important;" loop autoplay class="p-0"></lottie-player>
+              </div>
+              <a class="btn btn-outline-light btn-lg contact m-1" href="#about" role="button">About Me</a>
+              <a class="btn btn-outline-light btn-lg contact m-1" href="#skills" role="button">My-skills</a> 
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 text-center mt-5 justifly-content-center d-flex ">
+          <div class="imagebox">
+            <div class="img">
+                <img class="my-5 mx-5" id="profile" src="./profile1.png" alt="profile" >
+            </div>
+            <div class="text">
+              <p style="color: crimson; font-size: 23px;">Dreamer | Ambivert | knowledge & Experience Seeker | Engineer-to-be</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- About section -->
+<div class="about ">
+  <div class="mt-5" id="about">
+    <h3 class="mt-5">
+      <strong class="h" style="margin-top: 100px !important;" data-aos="fade-down" >About Me</strong>
+    </h3>
+    <div class="container">
+      <div class="row mt-5">
+        <div class="col-md-6 justify-content-center d-flex">
+          <div class="card border border-danger shadow-0 mb-3 aboutcard" data-aos="fade-right" style="width: 80%; height: fit-content !important;">
+            <div class="card-header">WHO AM I</div>
+            <div class="card-body text-danger">
+              <p class="card-text">
+                Hi, I'm Mitali Gandhi, 19-year-old passionate girl with strong interpersonal skills, born and brought up in Indore, Madhya Pradesh currently pursuing my education in the field of information technology from the University Institute Technology, RGPV Bhopal.I can sum up my entire personality in four words – "I don't give up! ".
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 justify-content-center d-flex">
+          <div class="card border border-danger shadow-0 mb-3 aboutcard bottom" data-aos="fade-left" style="width: 80%;">
+            <div class="card-header">ACADEMICS</div>
+            <div class="card-body text-danger">
+              <p class="card-text">
+                I have completed my higher secondary education from indore public school Eastern Campus, Indore, M.P  in the year 2020 with PCM as majors with 93.2% in CBSE Boards And my senior secondary education from Choitram School North Campus, Indore, M.P in the year 2018 with 91%.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row mt-5">
+        <div class="col-md-6 justify-content-center d-flex">
+          <div class="card border border-danger shadow-0 mb-3 aboutcard" data-aos="fade-right" style="width:80%; height: fit-content !important;">
+            <div class="card-header">Achievements</div>
+            <div class="card-body text-danger">
+              <p class="card-text">
+                I'm have won silver medal at Sahodaya Chess Conclave 2018 for being one of Top -5 players, I was rewared 'Verbal Mention' in Choithram International Model united Nations(2017)and  Shishukunj International Model united Nations (2018) and I have also qaulified Pre-RMO 2018 and also won the Best Aim And Utility Award at Senior Balvigyan -Chemistry 2016 .
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 justify-content-center d-flex">
+      <div class="card border border-danger shadow-0 mb-3 aboutcard bottom" data-aos="fade-left" style="width:80%; ">
+        <div class="card-header"> &More</div>
+        <div class="card-body text-danger">
+          <p class="card-text">
+            I'm a persuasive and passionate girl currently learning web-development under Ecell Tech grooming program  and working under probation period in cooperate relation department at E-Cell ,RGPV. I am aslo part of insyncI believe in character, values, vision, and action and work efficiently both as an individual contributor as well as along with a team.
+          </div>
+          </p>
+        </div>
+      </div>
+      </div>
+      <div class="row mt-5">
+        <div class="col-md-6 justify-content-center d-flex">
+          <div class="card border border-danger shadow-0 mb-3 aboutcard" data-aos="fade-right" style="width:80%; height: fit-content !important;">
+            <div class="card-header">Soft skills</div>
+            <div class="card-body text-danger">
+              <p class="card-text">
+                I have strong and effective communication skills and verbal skills, I have am a team player with good leadership qualities. I have a creative problem solving mindset. I am a person with work ethics . I have also tried my hands on creative writing.
+              </p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</div>
+<!-- skills -->
+<div id="skills">
+  <div class="justify-content-center d-flex">
+    <h1 class="text-white mt-5 h">MY TECH Skillls</h1>
+  </div>
+  <div class="timeline">
+      <div class="box left" data-aos="fade-left" >
+        <div class="content">
+          <div class="justify-content-center d-flex" style="width: 100%;" >
+            <img src="./htmlb.png" width="25%" id="htmli" >
+          </div>
+          <div class="text-center">
+            <p class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="far fa-star"></i>
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="box right" data-aos="fade-right" >
+        <div class="content">
+          <div class="justify-content-center d-flex" style="width: 100%;">
+            <img src="./cssb.png" width="25%" id="cssi" >
+          </div>
+          <div class="text-center">
+            <p class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star-half-alt"></i>
+              <i class="far fa-star"></i>
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="box left" data-aos="fade-left" >
+        <div class="content">
+          <div class="justify-content-center d-flex" style="width: 100%;">
+            <img src="./jsb.png" width="25%" id="jsi" >
+          </div>
+          <div class="text-center">
+            <p class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="far fa-star"></i>
+              <i class="far fa-star"></i>
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="box right" data-aos="fade-right" >
+        <div class="content">
+          <div class="justify-content-center d-flex" style="width: 100%;" >
+            <img src="./bootstrapb.png" width="25%" id="bootstrapi" >
+          </div>
+          <div class="text-center">
+            <p class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="far fa-star"></i>
+              <i class="far fa-star"></i>
+            </p>
+          </div>
+        </div>
+      </div>      
+      <div class="box left" data-aos="fade-left" >
+        <div class="content">
+          <h2 class="text-center"><i style="color: crimson ; font-size: 7rem;" class="fab fa-mdb"></i></h2>
+          <div class="text-center">
+            <p class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star-half-alt"></i>
+              <i class="far fa-star"></i>
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="box right" data-aos="fade-right" >
+        <div class="content">
+          <div class="justify-content-center d-flex" style="width: 100%;">
+            <img src="./jqb.png" width="25%" id="jqi" >
+          </div>
+          <div class="text-center">
+            <p class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star-half-alt"></i>
+              <i class="far fa-star"></i>
+              <i class="far fa-star"></i>
+              <i class="far fa-star"></i>
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="box left" data-aos="fade-left" >
+        <div class="content">
+          <div class="justify-content-center d-flex" style="width: 100%;" >
+            <img src="./cppb.png" width="25%" id="cppi" >
+          </div>
+          <div class="text-center">
+            <p class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star-half-alt"></i>
+              <i class="far fa-star"></i>
+              <i class="far fa-star"></i>
+              <i class="far fa-star"></i>
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="box right" data-aos="fade-right" >
+        <div class="content">
+          <h2 class="text-center"><i style="color: crimson ; width: 90%; font-size: 5rem;" class="fas fa-database"></i></h2>
+          <div class="text-center">
+            <p class="stars">
+              <i class="fas fa-star"></i>
+              <i class="far fa-star"></i>
+              <i class="far fa-star"></i>
+              <i class="far fa-star"></i>
+              <i class="far fa-star"></i>
+            </p>
+          </div>
+        </div>
+      </div>
+  </div>
+  <div class="justify-content-center d-flex m-5">
+    <a class="btn btn-outline-light btn-lg contact m-1" href="./skills.html" role="button">View Details</a> 
+  </div>
+</div>
+
+<!-- Footer -->
+<footer class="bg-dark text-center text-white mt-5">
+  <div class="container p-4">
+    <div class="justify-content-center d-flex">
+      <h3 class="follow">Follow</h3>
+    </div>
+    <section class="mb-4">  
+      <a class="btn btn-outline-light btn-floating contact m-1 overflow" href="https://www.instagram.com/mitaligandhi_26/" role="button"><i class="fab fa-instagram"></i></a>
+      <a class="btn btn-outline-light btn-floating contact m-1 overflow" href="https://www.linkedin.com/in/mitali-gandhi-995a1b200/" role="button"><i class="fab fa-linkedin-in"></i></a>
+      <a class="btn btn-outline-light btn-floating  contact m-1 overflow" href="https://github.com/Mitali0326" role="button"><i class="fab fa-github"></i></a>
+    </section>
+    <section >
+      <div class="row">
+        <div class="col-lg-6 col-md-6  mb-md-0">
+          <h4 class="text-uppercase">Links</h4>
+          <ul class="list-unstyled mb-0">
+            <li>
+              <a href="./index.html" class="text-white footerlink">Home</a>
+            </li>
+            <li>
+              <a href="./skills.html" class="text-white footerlink">Skills</a>
+            </li>
+            <li>
+              <a href="./project.html" class="text-white footerlink">Projects</a>
+            </li>
+            <li>
+              <a href="./contact.html" class="text-white footerlink">Contact ME</a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-lg-6 col-md-6 mb-md-0" style="overflow-y: hidden !important;">
+          <section style="overflow-y: hidden !important;">
+            <div style="overflow-y: hidden !important; margin-top: -20px !important;" class="justify-content-center d-flex">
+              <lottie-player src="https://assets4.lottiefiles.com/private_files/lf30_r9aq7wju.json"  class="mt-3" background="transparent"  speed="1"  style="width: 80%; height: 200px; overflow-y: hidden !important;" loop autoplay></lottie-player>
+            </div>
+          </section>
+        </div>
+      </div>
+    </section>
+  </div>
+  <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">© 2021 Copyright:
+    <a class="text-white" href="#">Mitali Gandhi</a>
+  </div>
+</footer>
+
+<a href="#" id="topbtn" class="gotopbtn text-light"><i class="fas fa-arrow-up"></i></a>
+<!-- Script -->
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.3.0/mdb.min.js"></script>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+<script src="./homescript.js"></script>
+</body>
+</html>

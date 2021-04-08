@@ -1,0 +1,208 @@
+@import url('https://fonts.googleapis.com/css2?family=Akaya+Telivigala&display=swap');
+*{
+  padding : 0;
+  margin : 0;
+  overflow-x: hidden !important;
+}
+html{
+  width: 100% !important;
+}
+body{
+  width: 100% !important;
+  margin: 0px 0px 0px 0px !important; 
+  padding: 0px 0px 0px 0px !important; 
+  overflow-y: auto !important;
+  overflow-x: hidden !important;
+  background-color: #000;
+  font-family: 'Akaya Telivigala', cursive !important;
+}
+html{
+  scroll-behavior: smooth;
+}
+.navbar{
+z-index: 1000;
+margin-top: 30px;
+font-size: 20px;
+position:absolute;
+left: -320px;
+width: 260px;
+height:100%;
+background-color:rgba(220, 20, 60, 0.555);
+text-align: center;
+transition: 0.6s ease;
+}
+.navbar > .side-nav{
+list-style-type:none;
+padding: 0;
+margin: 0px;
+}
+.nav-item{
+display: flex;
+}
+.nav-item > .nav-link{
+text-decoration: none;
+color:whitesmoke;
+font-size: 1.1em;
+padding: 1em;
+flex: 1;
+}
+.nav-item > .nav-link:hover{
+color: black;
+text-decoration: underline;
+transition: color .2s ease-in;
+}
+.toggle-collapse{
+color: whitesmoke;
+content: "";
+outline: inherit;
+border: 0px;
+background: transparent; 
+}
+#toggle-button > span > i{
+z-index: 100;
+width: 50px;
+font-size: 25px;
+position: absolute;
+color: crimson;
+/* left: 300px; */
+right: 0px;
+top: 10px;
+}
+
+#nav > ul > li:nth-child(7) > a > i{
+padding: .5em;
+margin: 3px;
+}
+#nav > ul > li:nth-child(7) > a > i:hover{
+ color:crimson ;
+}
+.nav-item> .logo{
+margin-top:80px !important;
+text-align: center;
+font-size: 1.3em;
+color: whitesmoke;
+padding: 1.3em;
+text-decoration: none;
+}
+#mit{
+margin-top:80px !important;
+font-size: 28px;
+color:white;
+}
+#ali{
+margin-top:80px !important;
+font-size: 28px;
+color:#dc143c;
+}
+.toggle-style{
+transition:0.6s ease;
+position:absolute;
+left: 0px;
+}
+/* navbar */
+.mynav{
+background-color: rgba(0, 0, 0, 0.425) !important;
+font-family:'Akaya Telivigala', cursive;
+position:fixed;
+z-index:10;
+width:100%;
+height:55px;
+padding: 0px;
+top:0px;
+left: 0px;
+vertical-align: center;
+padding: 10px 0;
+}
+#logo1{
+left: 15px;
+top: 2px !important;
+padding: 0% !important;
+position: fixed;
+display: inline;
+}
+#navbar > ul{
+display: inline;
+position: absolute;
+right: 50px;
+}
+#navbar > ul> li{
+list-style: none;
+display: inline-block;
+}
+#navbar > ul> li >a{
+text-decoration: none;
+margin-left: 3rem;
+font-size: 20px;
+color:white; 
+letter-spacing: 1px;
+
+}
+#navbar > ul> li >a:hover{
+
+font-weight:bold;
+letter-spacing: 1px;
+text-decoration: underline;
+transition: text-decoration .1s ease-in;
+}
+.contact{
+  color: crimson;
+  font-size: 18px;
+  padding: 2px;
+ border: 2px solid rgba(220, 20, 60, 0.582) !important;
+}
+.contact:hover{
+  color: whitesmoke;
+  background: rgba(220, 20, 60, 0.555) ;
+}
+::-webkit-scrollbar{
+  width:6px;
+}
+::-webkit-scrollbar-track {
+  background: black;
+}
+::-webkit-scrollbar-thumb{
+  background:linear-gradient(transparent,crimson);
+  border-radius: 10px;
+}
+.scrolled {
+  background-color:rgba(220, 20, 60, 0.555)!important;
+  transition: background-color 200ms linear;
+}
+.gotopbtn{
+  position:fixed;
+  width: 50px;
+  height: 50px;
+  background-color :rgba(220, 20, 60, 0.555);
+  bottom: 40px;
+  right: 50PX;
+  text-decoration: none;
+  color: white;
+  text-align: center;
+  line-height: 50px;
+  font-size: 22px;
+  border-radius: 50%;
+
+}
+.follow{
+  color: #dc143c;
+}
+
+/* .form-outline .form-control{
+  background: white !important;
+  }
+.form-label{
+  font-size: 16px !important;
+  color: crimson !important;
+}
+input{
+  color: white;
+}*/
+.footerlink{
+  font-size: 19.5px !important;
+}
+.footerlink:hover{
+color: #dc143c;
+}
+.overflow{
+  overflow-y: hidden !important;
+}

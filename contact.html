@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>contact</title>
+
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" rel="stylesheet"/>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.3.0/mdb.min.css"rel="stylesheet"/>
+  <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+<link rel="stylesheet" href="nav.css">
+<link rel="stylesheet" href="./contactstyle.css">
+<script src="https://www.gstatic.com/firebasejs/8.3.2/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.3.2/firebase-database.js"></script>
+
+</head>
+<body class="m-0 p-0">
+<!-- Side-Nav -->
+<button type="button" class="toggle-collapse d-block d-md-none" id="toggle-button">
+  <span class="toggle-icon"><i id="icon" class="fas fa-bars"></i></span>
+</button>
+<nav class="navbar m-0 p-0  d-block d-md-none" id="nav">
+    <div class="logo  mt-3">
+      <a href="#" class="logo"><span id="mit">Mit</span><span id="ali">ali</span> </a>
+    </div>
+    <ul class="side-nav m-0 p-0 d-block d-md-none">
+      <li class="nav-item">
+        <a href="./index.html" class="nav-link">Home</a>
+      </li>
+      <li class="nav-item">
+        <a href="./skills.html" class="nav-link">Skills</a>
+      </li>
+      <li class="nav-item">
+        <a href="./project.html" class="nav-link">Projects</a>
+      </li>
+      <li class="nav-item">
+        <a href="./contact.html" class="nav-link">Contact</a>
+      </li>
+      <li class="nav-item">
+          <a href="https://github.com/Mitali0326" class="nav-link"><i class="fab fa-github"></i></a>
+          <a href="https://www.linkedin.com/in/mitali-gandhi-995a1b200/" class="nav-link"><i class="fab fa-linkedin"></i></a>
+          <a href="" class="nav-link"><i class="fab fa-instagram"></i></a>
+      </li>
+    </ul>
+</nav>
+<!-- NavBar-->
+<nav class="mynav d-md-block d-none sticky-top" id="navbar">
+<ul class=" m-0 p-0 d-md-block d-none m">
+<div id="logo1" class="navbar-brand"><span id="mit">Mit</span><span id="ali">ali</span></div>
+  <li class="nav-items ">
+    <a href="./index.html" class="nav-links ">Home</a>
+  </li>
+  <li class="nav-items">
+    <a href="./skills.html" class="nav-links">Skills</a>
+  </li>
+  <li class="nav-items">
+    <a href="./project.html" class="nav-links">Projects</a>
+  </li>
+  <li class="nav-items">
+    <a href="./contact.html" class="nav-links">Contact</a>
+  </li>
+</ul>
+</nav>
+
+<div id="contact" class="contactDiv overflow">
+<div class="container justify-content-center d-flex">
+  <div class="row" id="row">
+    <div class="col-md-4 p-0 overflow mb-5 mt-5" id="div-1" >
+      <div class=" text-center overflow">
+        <div class="justify-content-center d-flex">
+  
+          <lottie-player src="./location.json" background="transparent"  speed="1"  style="width: 60px; height: 60px;  overflow-y: hidden!important;" loop autoplay></lottie-player>
+        <h2 class="p-2 mt-2"> Address</h2>
+        </div>
+        <p class="p-2">Lorem ipsum dolor sit amet <br>Lorem, ipsum dolor.</p>
+        <div class="justify-content-center d-flex">
+  
+          <lottie-player src="./telephone.json" background="transparent"  speed="1"  style="width: 80px; height: 80px;  overflow-y: hidden!important;" loop autoplay></lottie-player>
+  
+        <h2 class="p-2 mt-2">Contact No.</h2>
+        </div>
+        <p class="p-2">
+        +910000000000
+        </p>
+        <div class="justify-content-center d-flex">
+          <lottie-player src="./email.json" background="transparent"  speed="1"  style="width: 80px; height: 80px;  overflow-y: hidden!important;" loop autoplay></lottie-player>
+        <h2 class="p-2 mt-2 ">Emails:</h2>
+        </div> 
+        <a class="p-2"href="mailto: mitaligandhi02@gmail.com">mitaligandhi02@gmail.com</a>
+      </div>
+
+    
+    </div>
+    <div class="col-md-8 p-0">
+      <div class="flex flex-col text-center w-full ">
+        <h1 class="sm:text-3xl text-2xl font-medium title-font text-gray-900" style="color:crimson">Contact Us</h1>
+        <p class="m-3" style="font-size: 18px !important;">Send your message and will get back to you in 24hrs.</p>
+  
+      </div>
+      <form class="mt-5">
+        <!-- Name input -->
+        <div class="form-outline mb-5">
+          <input type="text" id="name" class="form-control" />
+          <label class="form-label" for="name">Name</label>
+        </div>
+      
+        <!-- Email input -->
+        <div class="form-outline mb-5">
+          <input type="email" id="email" class="form-control" />
+          <label class="form-label" for="email">Email address</label>
+        </div>
+      
+        <!-- Message input -->
+        <div class="form-outline mb-5">
+          <textarea class="form-control" id="message" rows="4"></textarea>
+          <label class="form-label" for="message">Message</label>
+        </div>
+      
+        <!-- Submit button -->
+        <button type="submit" id="sendbtn" class="btn btn-outline-light btn-block mb-4 contact">Send</button>
+      </form>
+        
+
+    </div>
+  </div>
+</div>
+</div>
+<footer class="bg-dark text-center text-white mt-5">
+  <div class="container p-4">
+    <div class="justify-content-center d-flex">
+      <h3 class="follow">Follow</h3>
+    </div>
+    <section class="mb-4">  
+      <a class="btn btn-outline-light btn-floating contact m-1 overflow" href="https://www.instagram.com/mitaligandhi_26/" role="button"><i class="fab fa-instagram"></i></a>
+      <a class="btn btn-outline-light btn-floating contact m-1 overflow" href="https://www.linkedin.com/in/mitali-gandhi-995a1b200/" role="button"><i class="fab fa-linkedin-in"></i></a>
+      <a class="btn btn-outline-light btn-floating  contact m-1 overflow" href="https://github.com/Mitali0326" role="button"><i class="fab fa-github"></i></a>
+    </section>
+    <section >
+      <div class="row">
+        <div class="col-lg-6 col-md-6  mb-md-0">
+          <h4 class="text-uppercase">Links</h4>
+          <ul class="list-unstyled mb-0">
+            <li>
+              <a href="./index.html" class="text-white footerlink">Home</a>
+            </li>
+            <li>
+              <a href="./skills.html" class="text-white footerlink">Skills</a>
+            </li>
+            <li>
+              <a href="./project.html" class="text-white footerlink">Projects</a>
+            </li>
+            <li>
+              <a href="./contact.html" class="text-white footerlink">Contact ME</a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-lg-6 col-md-6 mb-md-0" style="overflow-y: hidden !important;">
+          <section style="overflow-y: hidden !important;">
+            <div class="justify-content-center d-flex" style="overflow-y: hidden !important;">
+              <lottie-player src="https://assets4.lottiefiles.com/private_files/lf30_r9aq7wju.json"  class="mt-3" background="transparent"  speed="1"  style="width: 80%; height: 200px; overflow-y: hidden !important;" loop autoplay></lottie-player>
+            </div>
+          </section>
+        </div>
+      </div>
+    </section>
+  </div>
+  <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">© 2021 Copyright:
+    <a class="text-white" href="#">Mitali Gandhi</a>
+  </div>
+</footer>
+<a href="#" id="topbtn" class="gotopbtn text-light"><i class="fas fa-arrow-up"></i></a>
+
+<script
+type="text/javascript"
+src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.3.0/mdb.min.js"
+></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+<script src="./homescript.js"></script>
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+
+<script>
+  // Your web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "AIzaSyDZ3sy9K5-cIM6TYd9Jc8S6yqsWF2lNxgY",
+    authDomain: "contact-form-6bb2b.firebaseapp.com",
+    databaseURL: "https://contact-form-6bb2b-default-rtdb.firebaseio.com",
+    projectId: "contact-form-6bb2b",
+    storageBucket: "contact-form-6bb2b.appspot.com",
+    messagingSenderId: "128111889099",
+    appId: "1:128111889099:web:3c68b7f0de4f339f19a94e"
+  };
+  // Initialize Firebase
+  
+  firebase.initializeApp(firebaseConfig);
+  const db = firebase.database();
+
+  const name =document.getElementById('name');
+const email =document.getElementById('email');
+const message =document.getElementById('message');
+const sendbtn =document.getElementById('sendbtn');
+
+const rootRef = db.ref('users')
+sendbtn.addEventListener('click' ,(e)=>{
+  e.preventDefault();
+  // const autoId = rootRef.push().key
+  rootRef.push({
+    name:name.value,
+    email:email.value,
+    message:message.value 
+
+  })
+})
+
+</script>
+
+
+</body>
+</html>
