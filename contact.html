@@ -208,8 +208,6 @@ const sendbtn =document.getElementById('sendbtn');
 
 const rootRef = db.ref('users')
 sendbtn.addEventListener('click' ,(e)=>{
-  // e.preventDefault();
-  // const autoId = rootRef.push().key
   rootRef.push({
     name:username.value,
     email:email.value,
@@ -217,7 +215,7 @@ sendbtn.addEventListener('click' ,(e)=>{
 
   }).then(() => {
     alert("Thank You! Your message has been received and I will connect with you shortly.");
-    // location.reload();
+    
   });
 })
 
